@@ -13,8 +13,8 @@ body {
 }
 
 .container {
-	max-width: 115em;
-	padding: 0 2.5em;
+	max-width: 120rem;
+	padding: 0 5rem;
 }
 
 @media screen and (max-width: 1840px) {
@@ -29,9 +29,13 @@ body {
 	}
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 835px) {
 	html {
 		font-size: 1.4vw;
+	}
+	.container {
+		max-width: 52.1875rem;
+		padding: 0 3.75rem;
 	}
 }
 
@@ -41,8 +45,12 @@ body {
 	}
 }
 
-@media screen and (max-width: 402px) {
+@media screen and (max-width: 400px) {
 	html {
 		font-size: 3.98vw;
+	}
+	.container {
+		max-width: 25rem;
+		padding: 0 1.875rem;
 	}
 }
