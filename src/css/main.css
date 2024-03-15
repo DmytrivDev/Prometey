@@ -15,8 +15,11 @@
 @import url('./sections/home/pre-order.scss');
 @import url('./sections/home/social-network.scss');
 
-@import url('./sections/home/about-us.scss');
-@import url('./sections/home/vacancies.scss');
+/* About-us */
+@import url('./sections/about-us/about-us.scss');
+
+/* Vacancies */
+@import url('./sections/vacancies/vacancies.scss');
 
 /* Footer */
 @import url('./sections/footer/footer.scss');
