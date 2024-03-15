@@ -1,14 +1,59 @@
-/* https://uk.bestfonts.pro/font/fixel-text */
+// ======================== Fixel Text ========================
 
-
-
-/* 
 @font-face {
-    font-family: "fontname";
-    src: url("../fonts/fontname/fontname.eot");
-    src: url("../fonts/fontname/fontname.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/fontname/fontname.woff") format("woff"),
-    url("../fonts/fontname/fontname.ttf") format("truetype");
-    font-display: auto;
+	font-display: swap;
+	font-family: "Fixel Text";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url("../fonts/fixel-text-regular.ttf") format("ttf"),
+		url("../fonts/fixel-text-regular.woff2") format("woff2");
 }
-*/
+@font-face {
+	font-display: swap;
+	font-family: "Fixel Text";
+	font-style: normal;
+	font-weight: 500;
+	src:
+		url("../fonts/fixel-text-medium.ttf") format("ttf"),
+		url("../fonts/fixel-text-medium.woff2") format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: "Fixel Text";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		url("../fonts//fixel-text-semi-bold.ttf") format("ttf"),
+		url("../fonts/fixel-text-semi-bold.woff2") format("woff2");
+}
+
+// ======================== TT Firs Neue ========================
+
+@font-face {
+	font-display: swap;
+	font-family: "TT Firs Neue";
+	font-style: normal;
+	font-weight: 300;
+	src:
+		url("../fonts/tt-firs-neue-light.ttf") format("ttf"),
+		url("../fonts/tt-firs-neue-light.woff2") format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: "TT Firs Neue";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url("../fonts/tt-firs-neue-regular.ttf") format("ttf"),
+		url("../fonts/tt-firs-neue-regular.woff2") format("woff2");
+}
+@font-face {
+	font-display: swap;
+	font-family: "TT Firs Neue";
+	font-style: normal;
+	font-weight: 500;
+	src:
+		url("../fonts/tt-firs-neue-medium.ttf") format("ttf"),
+		url("../fonts/tt-firs-neue-medium.woff2") format("woff2");
+}
