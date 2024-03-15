@@ -1,13 +1,22 @@
 /* Settings */
-@import url("./settings/default.scss");
-@import url("./settings/variables.scss");
-@import url("./settings/fonts.scss");
-@import url("./settings/general.scss");
+@import url('./settings/default.scss');
+@import url('./settings/variables.scss');
+@import url('./settings/fonts.scss');
+@import url('./settings/general.scss');
 
 /* Header */
-@import url("./sections/header/header.scss");
+@import url('./sections/header/header.scss');
 
 /* Home */
+@import url('./sections/home/hero.scss');
+@import url('./sections/home/banner-catalog-books.scss');
+@import url('./sections/home/catalog-books.scss');
+@import url('./sections/home/banner-pre-order.scss');
+@import url('./sections/home/pre-order.scss');
+@import url('./sections/home/social-network.scss');
+
+@import url('./sections/home/about-us.scss');
+@import url('./sections/home/vacancies.scss');
 
 /* Footer */
-@import url("./sections/footer/footer.scss");
+@import url('./sections/footer/footer.scss');
