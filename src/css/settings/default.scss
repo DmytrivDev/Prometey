@@ -17,8 +17,14 @@ body {
 	box-sizing: border-box;
 }
 
-a {
+a,
+a:visited,
+a:hover {
 	text-decoration: none;
+}
+a {
+	color: inherit;
+	font-family: inherit;
 }
 
 button {

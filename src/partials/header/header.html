@@ -1,19 +1,23 @@
 <header class="header">
   <div class="container">
     <div class="header__content">
-      <div class="header__bugreg">
-        <span></span>
+      <div class="header-mobal__nav">
+        <div class="header-mobal__bugreg">
+          <span></span>
+        </div>
+        <a href="./index.html" class="header-mobal__logo custom-logo-link">
+          <img
+            src="./img/header/logo-mini.svg"
+            class="header-mobal__logo-mini custom-logo"
+            alt="Прометей"
+          />
+        </a>
       </div>
 
       <a href="./index.html" class="header__logo custom-logo-link">
         <img
           src="./img/header/logo.svg"
           class="header__logo-dec custom-logo"
-          alt="Прометей"
-        />
-        <img
-          src="./img/header/logo-mini.svg"
-          class="header__logo-mini custom-logo"
           alt="Прометей"
         />
       </a>
@@ -39,14 +43,9 @@
       </nav>
 
       <div class="header-shopp">
-        <svg width="23" height="23" class="header-shopp__icon">
-          <use href="./img/icons.svg#icon-header-shopp"></use>
-        </svg>
-      </div>
-      <div class="header-book">
-        <svg width="23" height="23" class="header-book__icon">
-          <use href="./img/icons.svg#icon-header-book"></use>
-        </svg>
+        <a href="#" class="header-shopp__link">
+          <img src="./img/header/header-shopp.svg" alt="" />
+        </a>
       </div>
 
       <form class="header-search__form">
@@ -65,6 +64,19 @@
           </svg>
         </button>
       </form>
+
+      <ul class="header-mobal-list">
+        <li class="header-shopp mobal-shopp">
+          <a href="#" class="header-shopp__link">
+            <img src="./img/header/header-shopp.svg" alt="" />
+          </a>
+        </li>
+        <li class="header-book">
+          <a href="#" class="header-book__link">
+            <img src="./img/header/header-open-book.svg" alt="" />
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </header>

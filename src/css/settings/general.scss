@@ -1,9 +1,6 @@
 // =============== general ===============
 
-html {
-	font-size: 16px;
-}
-
+html,
 body {
 	height: 100%;
 	font-family: var(--main-font-family);
@@ -16,7 +13,11 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	background-color: #e4e4e4;
+	background-image: url("/img/bg-img/bg-dec.png");
+	background-position: top;
+	background-size: contain;
+	background-repeat: repeat;
 }
 
 .container {
