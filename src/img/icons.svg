@@ -30,9 +30,9 @@
     <symbol id="icon-header-search" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M13.785 26.053c6.729 0 12.185-5.455 12.185-12.184S20.515 1.684 13.785 1.684 1.6 7.139 1.6 13.869c0 6.729 5.455 12.184 12.185 12.184zM30.4 30.484l-7.754-7.754"/>
     </symbol>
-    <symbol id="icon-header-shopp" viewBox="0 0 32 32">
-      <path d="M0 0h32v32H0V0z"/>
-    </symbol>
+		<symbol id="icon-header-shopp" viewBox="0 0 32 32">
+			<path d="M0.096 0.011h31.538v31.538h-31.538v-31.538z"></path>
+		</symbol>
     <symbol id="icon-header-upload" viewBox="0 0 31 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.182" d="M7.636 30.857H3.272c-.579 0-1.134-.241-1.543-.669s-.639-1.01-.639-1.616V10.286h28.364v18.286c0 .606-.23 1.188-.639 1.616s-.964.669-1.543.669h-4.364"/>
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.182" d="m9.818 22.857 5.455-5.714 5.455 5.714M15.273 17.143v13.714M24.633 2.286c-.186-.339-.453-.622-.774-.822s-.685-.311-1.059-.321H7.745c-.373.01-.738.121-1.059.321s-.587.483-.774.822l-4.822 8h28.364l-4.822-8zM15.273 1.143v9.143"/>

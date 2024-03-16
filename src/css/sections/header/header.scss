@@ -1,4 +1,76 @@
 // =============== header ===============
 
 .header {
+	// .header__content
+	&__content {
+		display: flex;
+		align-items: center;
+	}
+
+	// .header__bugreg
+	&__bugreg {
+	}
+
+	// .header__logo
+	&__logo {
+	}
+
+	// .header__logo-dec
+	&__logo-dec {
+	}
+
+	// .header__logo-mini
+	&__logo-mini {
+	}
+
+	// .header__navigation
+	&__navigation {
+	}
+
+	// .header__list
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	// .header__item
+	&__item {
+	}
+
+	// .header__link
+	&__link {
+	}
+}
+
+.header-shopp {
+	// .header-shopp__icon
+	&__icon {
+	}
+}
+.header-book {
+	// .header-book__icon
+	&__icon {
+	}
+}
+
+.header-search {
+	// .header-search__form
+	&__form {
+	}
+
+	// .header-search__label
+	&__label {
+	}
+
+	// .header-search__input
+	&__input {
+	}
+
+	// .header-search__btn
+	&__btn {
+	}
+
+	// .header-search__icon
+	&__icon {
+	}
 }
