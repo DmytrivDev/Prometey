@@ -1,4 +1,10 @@
 // =============== banner-pre-order ===============
 
 .banner-pre-order {
+	margin-top: 1rem;
+}
+@media screen and (max-width: 1145px) {
+	.banner-pre-order {
+		display: none;
+	}
 }

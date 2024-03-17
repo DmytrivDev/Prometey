@@ -1,4 +1,49 @@
 // =============== hero ===============
 
 .hero {
+	&__body {
+		display: flex;
+		align-items: center;
+		gap: 9rem;
+	}
+	&__title-hero {
+		width: 45.125rem;
+		height: 23rem;
+		position: relative;
+	}
+	&__prometeus {
+		width: 49.6875rem;
+		height: 40.4375rem;
+		position: relative;
+	}
+}
+@media screen and (max-width: 1145px) {
+	.hero {
+		&__body {
+			flex-direction: column;
+			gap: 0;
+		}
+		&__title-hero {
+			width: 43.3125rem;
+			height: 20.5625rem;
+		}
+		&__prometeus {
+			width: 41.3125rem;
+			height: 33.875rem;
+			transform: translateY(-10rem);
+		}
+	}
+}
+@media screen and (max-width: 680px) {
+	.hero {
+		&__title-hero {
+			width: 20.61756rem;
+			height: 9.78813rem;
+		}
+		&__prometeus {
+			width: 19.66556rem;
+			height: 16.1875rem;
+			transform: translateY(-5rem);
+		}
+	}
 }

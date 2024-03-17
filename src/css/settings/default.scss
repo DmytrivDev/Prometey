@@ -161,3 +161,29 @@ select {
 .hr {
 	width: 100%;
 }
+
+// banner
+.banner {
+	&__body {
+		background-color: #fafafa;
+		padding: 2.5rem;
+		position: relative;
+	}
+	&__body::after {
+		content: "";
+		width: 100vw;
+		left: 100%;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background-color: #fafafa;
+	}
+	&__wrap {
+		.banner-img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 1.875rem;
+		}
+	}
+}

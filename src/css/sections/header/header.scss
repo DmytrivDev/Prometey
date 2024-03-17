@@ -28,13 +28,47 @@
 	}
 
 	&__link {
-		// padding: 1em 1.19em;
-		// border-radius: 3.125rem;
-		// border: 1px solid #f00;
-		// display: block;
+		position: relative;
+		height: 100%;
+		z-index: 1;
+		display: flex;
+		align-items: center;
 		font-size: 1.5rem;
 		font-weight: 500;
 		line-height: 1.8rem;
+		transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&::before {
+			content: "";
+			width: 1.4375rem;
+			height: 1.4375rem;
+			margin-right: 1.25rem;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+			background-image: url("/img/header/header-user.svg");
+		}
+		span::before,
+		span::after {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			width: 100%;
+			height: 100%;
+			padding: 0.8rem;
+			border-radius: 3.125rem;
+			border: 1px solid transparent;
+			transition: border 200ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+		span:hover::before,
+		span:hover::after {
+			border-color: #f00;
+		}
+		&:hover {
+			color: #f00;
+		}
 	}
 }
 
@@ -59,22 +93,27 @@
 	}
 
 	&__input {
-		padding: 0 3rem 0 2rem;
+		padding: 0 3.75rem 0 2rem;
 		width: 15.0625rem;
 		height: 3.75rem;
 		border-radius: 3.125rem;
 		background-color: #e4e4e4;
-		outline: transparent;
-		color: #a5a5a5;
-		font-family: "Fixel Text";
 		font-size: 1.5rem;
 		font-weight: 500;
 		line-height: 1.8rem;
+		overflow: hidden;
+
+		&::placeholder {
+			color: #a5a5a5;
+		}
 	}
 
 	&__btn {
 		position: absolute;
-		right: 1.44rem;
+		border-radius: 0 3.125rem 3.125rem 0;
+		width: 3.75rem;
+		height: 3.75rem;
+		right: 0;
 		top: 50%;
 		transform: translateY(-50%);
 		display: flex;
@@ -85,6 +124,31 @@
 	&__icon {
 		fill: transparent;
 		stroke: #000;
+	}
+}
+.form-notice {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 17.5625rem;
+	padding: 2rem 1.375rem 1.75rem 2rem;
+	border-radius: 1.25rem;
+	background-color: #fff;
+	box-shadow:
+		0px 0.664px 2.214px 0px rgba(0, 0, 0, 0.02),
+		0px 1.596px 5.32px 0px rgba(0, 0, 0, 0.03),
+		0px 3.005px 10.017px 0px rgba(0, 0, 0, 0.04),
+		0px 5.361px 17.869px 0px rgba(0, 0, 0, 0.04),
+		0px 10.027px 33.422px 0px rgba(0, 0, 0, 0.05),
+		0px 24px 80px 0px rgba(0, 0, 0, 0.07);
+	p {
+		color: #a5a5a5;
+		line-height: 1.3rem;
+		span {
+			color: #a5a5a5;
+			font-weight: 500;
+		}
 	}
 }
 
@@ -116,8 +180,8 @@
 		}
 		&__bugreg {
 			position: relative;
-			width: 2.875rem;
-			height: 1.875rem;
+			width: 46px;
+			height: 30px;
 			span {
 				display: block;
 				height: 6px;

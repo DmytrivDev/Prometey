@@ -1,4 +1,10 @@
 // =============== banner-catalog-books ===============
 
 .banner-catalog-books {
+	margin-bottom: 1rem;
+}
+@media screen and (max-width: 1145px) {
+	.banner-catalog-books {
+		display: none;
+	}
 }
