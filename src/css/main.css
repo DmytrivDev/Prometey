@@ -9,9 +9,8 @@
 
 /* Home */
 @import url('./sections/home/hero.scss');
-@import url('./sections/home/banner-catalog-books.scss');
+@import url('./sections/home/banner.scss');
 @import url('./sections/home/catalog-books.scss');
-@import url('./sections/home/banner-pre-order.scss');
 @import url('./sections/home/pre-order.scss');
 @import url('./sections/home/social-network.scss');
 

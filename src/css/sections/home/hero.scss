@@ -9,16 +9,21 @@
 	&__title-hero {
 		width: 45.125rem;
 		height: 23rem;
-		position: relative;
 	}
 	&__prometeus {
 		width: 49.6875rem;
 		height: 40.4375rem;
-		position: relative;
 	}
 }
 @media screen and (max-width: 1145px) {
 	.hero {
+		padding-top: 3.75rem;
+		height: 47rem;
+		position: relative;
+
+		& > .container {
+			position: static;
+		}
 		&__body {
 			flex-direction: column;
 			gap: 0;
@@ -30,12 +35,18 @@
 		&__prometeus {
 			width: 41.3125rem;
 			height: 33.875rem;
-			transform: translateY(-10rem);
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 0;
 		}
 	}
 }
 @media screen and (max-width: 680px) {
 	.hero {
+		padding-top: 1.44rem;
+		height: 22rem;
+
 		&__title-hero {
 			width: 20.61756rem;
 			height: 9.78813rem;
@@ -43,7 +54,6 @@
 		&__prometeus {
 			width: 19.66556rem;
 			height: 16.1875rem;
-			transform: translateY(-5rem);
 		}
 	}
 }

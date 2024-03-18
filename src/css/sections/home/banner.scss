@@ -1,0 +1,51 @@
+// =============== banner ===============
+
+.banner {
+	&__container {
+		width: 210rem;
+		overflow: hidden;
+		padding-left: 2.5rem;
+	}
+	&__body {
+		background-color: #fafafa;
+		padding: 2.5rem 2.5rem 2.5rem 0;
+		position: relative;
+		&::after {
+			content: "";
+			width: 100vw;
+			left: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			background-color: #fafafa;
+		}
+	}
+	&__wrap {
+		width: 105rem;
+		.banner-img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 1.875rem;
+		}
+	}
+}
+.swiper {
+	overflow: visible !important;
+}
+
+@media screen and (max-width: 1890px) {
+	.banner {
+		&__wrap {
+			width: calc(105rem - 40px - 1rem);
+			.banner-img {
+				width: 100%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1145px) {
+	.banner {
+		display: none;
+	}
+}

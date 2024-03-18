@@ -1,4 +1,199 @@
 // =============== social-network ===============
 
 .social-network {
+	margin-top: 1rem;
+	&__body {
+		background-color: #fafafa;
+		padding: 5rem;
+		position: relative;
+		&::after {
+			content: "";
+			width: 100vw;
+			left: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			background-color: #fafafa;
+		}
+	}
+	&__title {
+		font-family: var(--second-family);
+		font-size: 3.5rem;
+		font-weight: 400;
+		line-height: 3.4825rem;
+		text-transform: uppercase;
+		margin-bottom: 5rem;
+	}
+
+	&__wrapp {
+		display: flex;
+		gap: 5.13rem;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 3.44rem;
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 3.44rem;
+	}
+
+	&__sumtitle {
+		font-size: 3.375rem;
+		font-weight: 500;
+		line-height: 4.3875rem;
+	}
+
+	&__text {
+		font-size: 2.5rem;
+		line-height: 3rem;
+		max-width: 44.9375rem;
+	}
+
+	&__motto {
+		font-family: var(--second-family);
+		font-size: 3rem;
+		font-weight: 500;
+		line-height: 3rem;
+	}
+
+	&__list {
+		display: flex;
+		gap: 2.27rem;
+	}
+
+	&__item {
+		width: 5.40125rem;
+		height: 5.40125rem;
+		a {
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&:hover {
+			img {
+				filter: brightness(0) saturate(100%) invert(11%) sepia(98%)
+					saturate(5372%) hue-rotate(359deg) brightness(108%) contrast(115%);
+			}
+		}
+	}
+
+	&__img {
+		flex-shrink: 0;
+		width: 43rem;
+		height: 41rem;
+		overflow: hidden;
+		border-radius: 0.89256rem;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+@media screen and (max-width: 1145px) {
+	.social-network {
+		margin-top: 2rem;
+		& > .container {
+			padding: 0;
+		}
+		&__body {
+			padding: 3.75rem 3.75rem 6rem 3.75rem;
+			border-radius: 1.875rem;
+		}
+		&__title {
+			font-size: 3rem;
+			line-height: 2.985rem;
+			margin-bottom: 1.88rem;
+		}
+		&__wrapp {
+			flex-direction: column-reverse;
+			gap: 2.5rem;
+		}
+		&__content {
+			flex-direction: row;
+			gap: 0;
+			justify-content: space-between;
+		}
+		&__info {
+			gap: 1.875rem;
+		}
+		&__sumtitle {
+			font-size: 2.25rem;
+			line-height: 2.925rem;
+			max-width: 32rem;
+		}
+		&__text {
+			font-size: 1.5rem;
+			line-height: 1.8rem;
+			max-width: 28rem;
+		}
+		&__motto {
+			font-size: 2rem;
+			line-height: 1.8rem;
+		}
+		&__list {
+			flex-direction: column;
+			gap: 4.36613rem;
+		}
+		&__item {
+			width: 5.54113rem;
+			height: 5.54113rem;
+		}
+		&__img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.social-network {
+		margin-top: 0.95rem;
+		&__body {
+			padding: 1.875rem 1.875rem 4.5rem 1.875rem;
+		}
+		&__title {
+			font-size: 1.42806rem;
+			line-height: 1.42094rem;
+			margin-bottom: 0.9rem;
+		}
+		&__wrapp {
+			gap: 1.18rem;
+		}
+		&__content {
+		}
+		&__info {
+			gap: 0.89256rem;
+		}
+		&__sumtitle {
+			font-size: 1rem;
+			line-height: 1.3rem;
+			max-width: 15.23263rem;
+		}
+		&__text {
+			font-size: 0.75rem;
+			line-height: 0.9rem;
+			max-width: 13.32856rem;
+		}
+		&__motto {
+			font-size: 1rem;
+			line-height: 0.9rem;
+		}
+		&__list {
+			gap: 0.625rem;
+		}
+		&__item {
+			width: 2.63769rem;
+			height: 2.63769rem;
+		}
+		&__img {
+		}
+	}
 }

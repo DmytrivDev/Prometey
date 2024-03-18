@@ -3,4 +3,4 @@
 // import {someImport} from "./parts/some-import.js";
 
 // someImport(someLib);
-import './swiper';
+import './parts/swiper';
