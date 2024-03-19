@@ -25,6 +25,8 @@
 		a {
 			&::before {
 				content: "";
+				position: relative;
+				top: -0.11rem;
 				width: 1.7rem;
 				height: 1.7rem;
 				margin-right: 0.7rem;
@@ -42,6 +44,8 @@
 		&.icon-books {
 			a {
 				&::before {
+					width: 2rem;
+					height: 2rem;
 					background-image: url("/img/header/header-book.svg");
 				}
 			}
@@ -70,6 +74,8 @@
 		&.icon-upload {
 			a {
 				&::before {
+					width: 2rem;
+					height: 2rem;
 					background-image: url("/img/header/header-upload.svg");
 				}
 			}
@@ -99,23 +105,17 @@
 		padding: 0.6rem;
 		position: relative;
 		img {
-			width: 1.5rem;
-			height: 1.5rem;
+			width: 2.2rem;
+			height: 2.2rem;
 		}
-		& span span {
+		& span {
 			position: absolute;
-			font-family: "Roboto", sans-serif;
-			font-size: 0.6rem;
 			width: 0.85rem;
 			height: 0.85rem;
-			right: 0.45rem;
-			top: 0.45rem;
+			right: 0.55rem;
+			top: 0.7rem;
 			border-radius: 50%;
 			background-color: #f00;
-			color: #fff;
-			display: flex;
-			align-items: center;
-			justify-content: center;
 		}
 	}
 	&:hover img {
@@ -275,7 +275,7 @@
 				width: 2.09431rem;
 				height: 2.09431rem;
 			}
-			& span span {
+			& span {
 				top: 0.1rem;
 				right: 0rem;
 			}
@@ -349,8 +349,7 @@
 				width: 0.99931rem;
 				height: 0.99931rem;
 			}
-			& span span {
-				font-size: 0.3rem;
+			& span {
 				width: 0.45rem;
 				height: 0.45rem;
 				top: 0rem;
