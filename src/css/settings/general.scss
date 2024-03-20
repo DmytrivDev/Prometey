@@ -16,6 +16,7 @@ main {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 	background-color: #e4e4e4;
 	background-image: url("/img/bg-img/bg-dec.png");
 	background-position: top;
