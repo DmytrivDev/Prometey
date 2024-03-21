@@ -3,7 +3,7 @@
 .pre-order {
 	margin-top: 1rem;
 	&__wrapp {
-		padding: 5rem 5rem 6.5rem 5rem;
+		padding: 5rem 5rem 6.5rem 0;
 		background-color: #fafafa;
 		position: relative;
 		&::after {
@@ -18,6 +18,7 @@
 	}
 	&__point {
 		margin-bottom: 4.5rem;
+		padding-left: 5rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -120,7 +121,17 @@
 	}
 }
 
-.pre-order-card {
+.pre-order {
+	&__container {
+		width: 210rem;
+		overflow: hidden;
+		padding-left: 2.5rem;
+	}
+	&__body {
+		width: calc(28.625rem * 3 + 80px);
+	}
+}
+.order-card {
 	&__item {
 		width: 28.625rem !important;
 		padding: 2rem;
@@ -134,14 +145,15 @@
 		overflow: hidden;
 		margin-bottom: 1.7rem;
 	}
+	&__link {
+		display: block;
+	}
 	&__img-text {
 		padding: 0.35rem 0.85rem 0.2rem 1.8rem;
 		border-radius: 1.25rem;
 		background: #f00;
 		color: #fff;
-		text-align: center;
 		font-weight: 500;
-		line-height: 1.2rem;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -167,10 +179,13 @@
 		height: 100%;
 		object-fit: cover;
 	}
-	&__subtitle {
+	&__author {
 		font-size: 1.5rem;
-		line-height: 1.8rem;
 		margin-bottom: 0.5rem;
+		max-width: 24rem;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 	&__title {
 		font-size: 2.25rem;
@@ -194,7 +209,6 @@
 		color: #fff;
 		font-size: 1.5rem;
 		font-weight: 600;
-		line-height: 1.8rem;
 	}
 	&__price {
 		margin-top: 2.5rem;
@@ -202,15 +216,7 @@
 		font-weight: 500;
 	}
 }
-.pre-order {
-	&__container {
-		width: 210rem;
-		overflow: hidden;
-	}
-	&__body {
-		width: 93rem;
-	}
-}
+
 @media screen and (max-width: 1145px) {
 	.pre-order {
 		display: none;

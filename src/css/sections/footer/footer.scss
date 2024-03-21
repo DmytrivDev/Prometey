@@ -114,6 +114,9 @@
 	justify-content: space-between;
 }
 .footer-contacts {
+	font-style: normal;
+}
+.footer-contacts {
 	&__phone {
 		font-size: 2.625rem;
 		font-weight: 500;
@@ -143,6 +146,9 @@
 	}
 }
 .footer-network {
+	&__info {
+		font-style: normal;
+	}
 	&__text {
 		margin-bottom: 1rem;
 		text-align: right;
