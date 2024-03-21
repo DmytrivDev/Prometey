@@ -3,7 +3,7 @@
 .catalog-books {
 	margin: 1rem 0;
 	&__wrapp {
-		padding: 5rem 5rem 6.5rem 5rem;
+		padding: 5rem;
 		background-color: #fafafa;
 		position: relative;
 		&::after {
@@ -44,27 +44,50 @@
 	}
 	&__list {
 		display: grid;
-		gap: 40px;
+		gap: 2.25rem;
 		grid-template-columns: auto auto auto;
-		grid-template-rows: 1fr 1fr;
 		justify-content: center;
 	}
 }
 
 @media screen and (max-width: 1145px) {
 	.catalog-books {
+		& > .container {
+			padding: 0;
+		}
 		margin: 0;
 		&__wrapp {
+			padding: 3.75rem;
+			border-radius: 1.875rem;
 		}
 		&__point {
+			flex-direction: column-reverse;
+			gap: 2.5rem;
+			align-items: start;
+			margin-bottom: 1.7rem;
 		}
 		&__title {
+			font-size: 3rem;
 		}
 		&__point-list {
+			width: 100%;
+			gap: 0;
+			justify-content: space-between;
 		}
 		&__point-item {
+			a {
+				padding: 1rem 1.2rem 0.7rem 1.2rem;
+				border-radius: 3.125rem;
+				background: #f4f3f3;
+				font-size: 1.5rem;
+				&::before {
+					content: "";
+					display: none;
+				}
+			}
 		}
 		&__point-go {
+			display: none;
 		}
 	}
 
@@ -72,8 +95,50 @@
 		&__body {
 		}
 		&__list {
+			gap: 0.9rem;
+			grid-template-columns: auto auto;
 		}
 	}
 }
 @media screen and (max-width: 680px) {
+	.catalog-books {
+		&__wrapp {
+			padding: 1.875rem;
+			border-radius: 0.89256rem;
+		}
+		&__point {
+			gap: 1.2rem;
+			margin-bottom: 0.8rem;
+		}
+		&__title {
+			font-size: 1.5rem;
+		}
+		&__point-list {
+			width: 100%;
+			gap: 0;
+			justify-content: space-between;
+		}
+		&__point-item {
+			a {
+				padding: 0.3rem 0.7rem 0.2rem 0.7rem;
+				border-radius: 1.48756rem;
+				font-size: 0.625rem;
+				&::before {
+					content: "";
+					display: none;
+				}
+			}
+		}
+		&__point-go {
+			display: none;
+		}
+	}
+
+	.books-card {
+		&__body {
+		}
+		&__list {
+			gap: 0.45rem;
+		}
+	}
 }

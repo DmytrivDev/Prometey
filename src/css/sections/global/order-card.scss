@@ -10,14 +10,14 @@
 		width: 100%;
 		height: 24.625rem;
 		position: relative;
-		border-radius: 0.89925rem;
+		border-radius: 1.125rem;
 		overflow: hidden;
 		margin-bottom: 1.7rem;
 	}
 	&__img-label {
 		padding: 0.35rem 0.85rem 0.2rem 1.8rem;
 		border-radius: 1.25rem;
-		background: #f00;
+		background-color: #f00;
 		color: #fff;
 		font-weight: 500;
 		position: absolute;
@@ -84,5 +84,102 @@
 		margin-top: 2.5rem;
 		font-size: 2rem;
 		font-weight: 500;
+	}
+	&__stock {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1145px) {
+	.order-card {
+		&__item {
+			width: 21.7rem !important;
+			padding: 1.6rem;
+		}
+		&__img-wrapp {
+			height: 18.7rem;
+			border-radius: 0.89556rem;
+			margin-bottom: 1.6rem;
+		}
+		&__img-label {
+			border-radius: 0.89556rem;
+			top: auto;
+			bottom: 0;
+		}
+		&__author {
+			font-size: 1.25rem;
+			margin-bottom: 1rem;
+			max-width: 100%;
+		}
+		&__title {
+			font-size: 1.875rem;
+			line-height: 2.25rem;
+			margin-bottom: 1.12rem;
+			height: 4.375rem;
+			max-width: 100%;
+		}
+		&__btn {
+			display: none;
+		}
+		&__price {
+			margin-top: 0;
+			margin-bottom: 1.12rem;
+			font-size: 1.59213rem;
+		}
+		&__stock {
+			display: block;
+			color: #f00;
+			font-size: 1.25rem;
+			font-weight: 500;
+		}
+	}
+}
+@media screen and (max-width: 680px) {
+	.order-card {
+		&__item {
+			width: 10.33rem !important;
+			padding: 0.75rem;
+		}
+		&__img-wrapp {
+			height: 9rem;
+			border-radius: 0.2975rem;
+			margin-bottom: 0.75rem;
+		}
+		&__img-label {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: Arial, sans-serif;
+			height: 0.9rem;
+			font-size: 0.5rem;
+			border-radius: 0.2975rem;
+			padding: 0 0.4rem 0 0.8rem;
+			&::before {
+				left: 0.25rem;
+				width: 0.4rem;
+				height: 0.4rem;
+				margin-right: 0.4rem;
+			}
+		}
+		&__author {
+			font-size: 0.625rem;
+			margin-bottom: 0.5rem;
+		}
+		&__title {
+			font-size: 1rem;
+			line-height: 1.2rem;
+			margin-bottom: 0.5rem;
+			height: 2.08256rem;
+		}
+		&__btn {
+			display: none;
+		}
+		&__price {
+			margin-bottom: 0.3rem;
+			font-size: 0.75rem;
+		}
+		&__stock {
+			font-size: 0.625rem;
+		}
 	}
 }
