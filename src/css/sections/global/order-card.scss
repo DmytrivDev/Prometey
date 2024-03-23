@@ -2,13 +2,12 @@
 
 .order-card {
 	&__item {
-		width: 28.625rem !important;
 		padding: 2rem;
 		background-color: #fff;
 	}
 	&__img-wrapp {
+		padding-top: 100%;
 		width: 100%;
-		height: 24.625rem;
 		position: relative;
 		border-radius: 1.125rem;
 		overflow: hidden;
@@ -23,6 +22,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
+		z-index: 5;
 		&::before {
 			content: "";
 			position: absolute;
@@ -44,6 +44,10 @@
 		display: block;
 	}
 	&__img {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: absolute;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
@@ -51,7 +55,6 @@
 	&__author {
 		font-size: 1.5rem;
 		margin-bottom: 0.5rem;
-		max-width: 24rem;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -64,7 +67,6 @@
 		text-transform: uppercase;
 		margin-bottom: 1.7rem;
 		height: 5.3125rem;
-		max-width: 24rem;
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
@@ -93,11 +95,9 @@
 @media screen and (max-width: 1145px) {
 	.order-card {
 		&__item {
-			width: 21.7rem !important;
 			padding: 1.6rem;
 		}
 		&__img-wrapp {
-			height: 18.7rem;
 			border-radius: 0.89556rem;
 			margin-bottom: 1.6rem;
 		}
@@ -109,14 +109,12 @@
 		&__author {
 			font-size: 1.25rem;
 			margin-bottom: 1rem;
-			max-width: 100%;
 		}
 		&__title {
 			font-size: 1.875rem;
 			line-height: 2.25rem;
 			margin-bottom: 1.12rem;
 			height: 4.375rem;
-			max-width: 100%;
 		}
 		&__btn {
 			display: none;
@@ -137,11 +135,9 @@
 @media screen and (max-width: 680px) {
 	.order-card {
 		&__item {
-			width: 10.33rem !important;
 			padding: 0.75rem;
 		}
 		&__img-wrapp {
-			height: 9rem;
 			border-radius: 0.2975rem;
 			margin-bottom: 0.75rem;
 		}

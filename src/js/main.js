@@ -4,5 +4,7 @@
 
 // someImport(someLib);
 
-import './parts/swiper';
+import './parts/swiper-banner';
+import './parts/swiper-card';
+
 import './parts/scroll';
