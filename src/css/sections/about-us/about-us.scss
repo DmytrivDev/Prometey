@@ -1,4 +1,181 @@
 // =============== about-us ===============
 
 .about-us {
+	margin-top: 1rem;
+	&__wrapp {
+		padding: 5rem 0 5rem 5rem;
+		background-color: #fafafa;
+		position: relative;
+		&::after {
+			content: "";
+			width: 100vw;
+			left: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			background-color: #fafafa;
+		}
+	}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		font-family: "TT Firs Neue";
+		font-size: 3.5rem;
+		font-weight: 400;
+		line-height: 3.4825rem;
+		text-transform: uppercase;
+		margin-bottom: 4.8rem;
+	}
+	&__subtitle {
+		max-width: 51.625rem;
+		font-size: 3.375rem;
+		font-weight: 500;
+		line-height: 4.05rem;
+		margin-bottom: 3.5rem;
+	}
+	&__text {
+		max-width: 51.625rem;
+		font-size: 2.5rem;
+		line-height: 3rem;
+		margin-bottom: 5rem;
+	}
+	&__subtext {
+		display: none;
+	}
+	&__list {
+		display: flex;
+		gap: 1.13rem;
+	}
+	&__link {
+		display: block;
+		width: 18.3125rem;
+		height: 4.25rem;
+		border-radius: 1.25rem;
+		border: 1px solid #f00;
+		color: #f00;
+		font-size: 1.875rem;
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+		&:hover {
+			background-color: #f00;
+			color: #fff;
+		}
+	}
+	&__img-wrapp {
+		flex-shrink: 0;
+		width: 40rem;
+		height: 40rem;
+		border-radius: 1.875rem;
+		overflow: hidden;
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+@media screen and (max-width: 1145px) {
+	.about-us {
+		margin-top: 2rem;
+		& > .container {
+			padding: 0;
+		}
+		&__wrapp {
+			padding: 3.75rem;
+			border-radius: 1.875rem;
+		}
+		&__body {
+			flex-direction: column-reverse;
+			gap: 2.5rem;
+		}
+		&__title {
+			font-size: 3rem;
+			line-height: 2.985rem;
+			margin-bottom: 1.13rem;
+		}
+		&__subtitle {
+			font-size: 2.25rem;
+			line-height: 2.7rem;
+			max-width: 100%;
+			margin-bottom: 1.9rem;
+		}
+		&__text {
+			font-size: 1.5rem;
+			line-height: 1.8rem;
+			max-width: 100%;
+			margin-bottom: 1.9rem;
+		}
+		&__subtext {
+			display: block;
+			font-size: 1.5rem;
+			line-height: 1.8rem;
+			margin-bottom: 1.9rem;
+		}
+		&__list {
+			justify-content: center;
+			gap: 0;
+			.hidden-item {
+				display: none;
+			}
+		}
+		&__link {
+			display: flex;
+			width: 24.7rem;
+			height: 5.25rem;
+			border-radius: 4.375rem;
+			background-color: #f00;
+			color: #fff;
+			font-size: 2.1rem;
+		}
+		&__img-wrapp {
+			width: 100%;
+			height: 27rem;
+		}
+	}
+}
+@media screen and (max-width: 680px) {
+	.about-us {
+		margin-top: 0.95rem;
+		&__wrapp {
+			padding: 1.875rem;
+			border-radius: 0.89256rem;
+		}
+		&__body {
+			gap: 1.19rem;
+		}
+		&__title {
+			font-size: 1.5rem;
+			line-height: 1.4925rem;
+			margin-bottom: 0.55rem;
+		}
+		&__subtitle {
+			font-size: 1rem;
+			line-height: 1.2rem;
+			margin-bottom: 0.9rem;
+		}
+		&__text {
+			font-size: 0.75rem;
+			line-height: 0.9rem;
+			margin-bottom: 0.9rem;
+		}
+		&__subtext {
+			font-size: 0.75rem;
+			line-height: 0.9rem;
+			margin-bottom: 0.9rem;
+		}
+		&__link {
+			width: 11.7rem;
+			height: 2.5rem;
+			border-radius: 2.08256rem;
+			background-color: #f00;
+			color: #fff;
+			font-size: 0.99963rem;
+		}
+	}
 }
