@@ -9,13 +9,13 @@
 		padding-top: 100%;
 		width: 100%;
 		position: relative;
-		border-radius: 1.125rem;
+		border-radius: 0.99744rem;
 		overflow: hidden;
 		margin-bottom: 1.7rem;
 	}
 	&__img-label {
 		padding: 0.35rem 0.85rem 0.2rem 1.8rem;
-		border-radius: 1.25rem;
+		border-radius: 1.10825rem;
 		background-color: #f00;
 		color: #fff;
 		font-weight: 500;
@@ -29,8 +29,8 @@
 			top: 50%;
 			transform: translateY(-50%);
 			left: 0.75rem;
-			width: 0.6875rem;
-			height: 0.6875rem;
+			width: 0.7rem;
+			height: 0.7rem;
 			margin-right: 0.4rem;
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -104,6 +104,8 @@
 			margin-bottom: 1.6rem;
 		}
 		&__img-label {
+			font-size: 0.8rem;
+			line-height: 1rem;
 			border-radius: 0.89556rem;
 			top: auto;
 			bottom: 0;
@@ -140,7 +142,7 @@
 			padding: 0.75rem;
 		}
 		&__img-wrapp {
-			border-radius: 0.2975rem;
+			border-radius: 0.42631rem;
 			margin-bottom: 0.75rem;
 		}
 		&__img-label {
