@@ -54,19 +54,21 @@
 	}
 	&__author {
 		font-size: 1.5rem;
-		margin-bottom: 0.5rem;
-		white-space: nowrap;
+		margin-bottom: 1rem;
+		display: -webkit-box;
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
 	&__title {
 		display: block;
-		font-size: 2.25rem;
+		font-size: 1.8rem;
 		font-weight: 600;
-		line-height: 2.7rem;
+		line-height: 2.2rem;
 		text-transform: uppercase;
-		margin-bottom: 1.7rem;
-		height: 5.3125rem;
+		margin-bottom: 2rem;
+		height: 4.3rem;
 		display: -webkit-box;
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
@@ -108,20 +110,20 @@
 		}
 		&__author {
 			font-size: 1.25rem;
-			margin-bottom: 1rem;
+			margin-bottom: 0.5rem;
 		}
 		&__title {
-			font-size: 1.875rem;
-			line-height: 2.25rem;
-			margin-bottom: 1.12rem;
-			height: 4.375rem;
+			font-size: 1.5rem;
+			line-height: 2rem;
+			margin-bottom: 1.5rem;
+			height: 3.8rem;
 		}
 		&__btn {
 			display: none;
 		}
 		&__price {
 			margin-top: 0;
-			margin-bottom: 1.12rem;
+			margin-bottom: 1.4rem;
 			font-size: 1.59213rem;
 		}
 		&__stock {
@@ -159,13 +161,14 @@
 		}
 		&__author {
 			font-size: 0.625rem;
-			margin-bottom: 0.5rem;
+			line-height: 1rem;
+			margin-bottom: 0.1rem;
 		}
 		&__title {
-			font-size: 1rem;
-			line-height: 1.2rem;
-			margin-bottom: 0.5rem;
-			height: 2.08256rem;
+			font-size: 0.8rem;
+			line-height: 1rem;
+			margin-bottom: 0.7rem;
+			height: 1.9rem;
 		}
 		&__btn {
 			display: none;
@@ -173,9 +176,11 @@
 		&__price {
 			margin-bottom: 0.3rem;
 			font-size: 0.75rem;
+			line-height: 1rem;
 		}
 		&__stock {
 			font-size: 0.625rem;
+			line-height: 1rem;
 		}
 	}
 }

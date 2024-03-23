@@ -21,7 +21,7 @@
 		}
 	}
 	&__wrap {
-		width: calc(105rem - 40px);
+		width: calc(105rem - 50px);
 		.banner-img {
 			width: 100%;
 			height: 100%;
@@ -34,15 +34,6 @@
 	overflow: visible !important;
 }
 
-@media screen and (max-width: 1890px) {
-	.banner {
-		&__wrap {
-			.banner-img {
-				width: 100%;
-			}
-		}
-	}
-}
 @media screen and (max-width: 1145px) {
 	.banner {
 		display: none;
