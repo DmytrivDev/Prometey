@@ -1,0 +1,34 @@
+.social {
+	&__item {
+		width: 5.40125rem;
+		height: 5.40125rem;
+	}
+	&__link {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__item:hover {
+		img {
+			filter: brightness(0) saturate(100%) invert(11%) sepia(98%)
+				saturate(5372%) hue-rotate(359deg) brightness(108%) contrast(115%);
+		}
+	}
+}
+@media screen and (max-width: 1145px) {
+	.social {
+		&__item {
+			width: 5.54113rem;
+			height: 5.54113rem;
+		}
+	}
+}
+@media screen and (max-width: 680px) {
+	.social {
+		&__item {
+			width: 2.63769rem;
+			height: 2.63769rem;
+		}
+	}
+}
