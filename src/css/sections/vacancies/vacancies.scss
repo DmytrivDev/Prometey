@@ -168,8 +168,12 @@
 			margin-bottom: 2.55rem;
 		}
 		&__item {
-			&:last-child {
-				display: none;
+			display: none;
+			&:nth-child(1) {
+				display: block;
+			}
+			&:nth-child(2) {
+				display: block;
 			}
 			border-radius: 1.18163rem;
 		}
