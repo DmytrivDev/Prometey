@@ -169,13 +169,13 @@
 		}
 		&__item {
 			display: none;
+			border-radius: 1.18163rem;
 			&:nth-child(1) {
 				display: block;
 			}
 			&:nth-child(2) {
 				display: block;
 			}
-			border-radius: 1.18163rem;
 		}
 		&__wrapp {
 			padding: 1.6rem;
