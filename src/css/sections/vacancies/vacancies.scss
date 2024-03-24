@@ -29,12 +29,11 @@
 	&__content {
 		display: flex;
 		justify-content: space-between;
-		padding-right: 5rem;
 	}
 	&__text {
 		font-size: 2.5rem;
 		line-height: 3rem;
-		width: 59rem;
+		width: 63rem;
 	}
 }
 
@@ -67,9 +66,10 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-end;
-		padding-bottom: 2.5rem;
+		padding: 2.5rem;
 	}
 	&__title {
+		text-align: center;
 		color: #fff;
 		font-family: "TT Firs Neue";
 		font-size: 3.5rem;
@@ -146,7 +146,6 @@
 			flex-direction: column;
 			justify-content: start;
 			align-items: center;
-			padding: 0;
 		}
 		&__text {
 			width: 100%;
@@ -175,7 +174,7 @@
 			border-radius: 1.18163rem;
 		}
 		&__wrapp {
-			padding-bottom: 1.6rem;
+			padding: 1.6rem;
 		}
 		&__title {
 			font-size: 2.20569rem;
@@ -223,10 +222,6 @@
 			line-height: 1.4925rem;
 			margin-bottom: 0.6rem;
 		}
-		&__body {
-		}
-		&__content {
-		}
 		&__text {
 			font-size: 0.75rem;
 			line-height: 0.9rem;
@@ -248,7 +243,7 @@
 			border-radius: 0.56244rem;
 		}
 		&__wrapp {
-			padding-bottom: 0.75rem;
+			padding: 0.75rem;
 		}
 		&__title {
 			font-size: 1.04994rem;
@@ -280,8 +275,6 @@
 		}
 		&__list {
 			gap: 1.08rem;
-		}
-		&__item {
 		}
 	}
 }
