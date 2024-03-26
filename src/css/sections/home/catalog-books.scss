@@ -1,5 +1,8 @@
 // =============== catalog-books ===============
-
+.books-html > .catalog-books {
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
 .catalog-books {
 	margin: 1rem 0;
 	&__wrapp {
@@ -52,7 +55,11 @@
 }
 
 @media screen and (max-width: 1145px) {
+	.books-html > .catalog-books {
+		margin-top: 2rem;
+	}
 	.catalog-books {
+		margin: 0;
 		& > .container {
 			padding: 0;
 		}
@@ -101,6 +108,9 @@
 	}
 }
 @media screen and (max-width: 680px) {
+	.books-html > .catalog-books {
+		margin-top: 0.95rem;
+	}
 	.catalog-books {
 		&__wrapp {
 			padding: 1.875rem;
