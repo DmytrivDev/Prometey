@@ -125,12 +125,15 @@
 								transform: translateX(100%);
 							}
 						}
+						.sub-menu a::after {
+							display: none;
+						}
 					}
 				}
 			}
 		}
 		.sub-menu {
-			padding: 1.5rem;
+			padding: 0.8rem 1.5rem 1.5rem 1.5rem;
 			background-color: #fff;
 			transition: 0.3s opacity;
 			visibility: hidden;
@@ -157,9 +160,6 @@
 				&::before {
 					display: none;
 				}
-			}
-			a.first {
-				margin-top: 0;
 			}
 			.sub-menu {
 				top: -1.5rem;
@@ -337,7 +337,7 @@
 				}
 			}
 			.bugreg-menu {
-				padding: 1.5rem;
+				padding: 0.8rem 1.5rem 1.1rem 1.5rem;
 				padding-bottom: 1.1rem;
 				background-color: #fff;
 				transition: 0.3s opacity;
@@ -345,7 +345,7 @@
 				opacity: 0;
 				position: absolute;
 				left: 0;
-				top: calc(100% + 3.2rem);
+				top: calc(100% + 1.5rem);
 				width: 16.7rem;
 				border-radius: 1.25rem;
 				box-shadow:
@@ -365,9 +365,6 @@
 				}
 				a:hover {
 					color: #f00;
-				}
-				a.first {
-					margin-top: 0;
 				}
 			}
 			.bugreg-menu.active {
@@ -378,7 +375,7 @@
 				color: #f00;
 			}
 			.bugreg-submenu {
-				padding: 1.5rem;
+				padding: 0.8rem 1.5rem 1.1rem 1.5rem;
 				padding-bottom: 1.1rem;
 				background-color: #fff;
 				transition: 0.3s opacity;
@@ -386,7 +383,7 @@
 				opacity: 0;
 				position: absolute;
 				left: 0;
-				top: calc(100% + 16.3rem);
+				top: calc(100% + 0.3rem);
 				width: 16.7rem;
 				border-radius: 1.25rem;
 				box-shadow:
@@ -406,9 +403,6 @@
 				}
 				a:hover {
 					color: #f00;
-				}
-				a.first {
-					margin-top: 0;
 				}
 			}
 			.bugreg-submenu.active {
@@ -502,9 +496,8 @@
 			}
 			.bugreg-menu {
 				width: 9rem;
-				padding: 0.8rem;
-				padding-bottom: 0.4rem;
-				top: calc(100% + 1.75rem);
+				padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+				top: calc(100% + 0.8rem);
 				border-radius: 0.6695rem;
 				a {
 					padding-bottom: 0.4rem;
@@ -515,9 +508,8 @@
 			}
 			.bugreg-submenu {
 				width: 9rem;
-				padding: 0.8rem;
-				padding-bottom: 0.4rem;
-				top: calc(100% + 9rem);
+				padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+				top: calc(100% + 0.15rem);
 				border-radius: 0.6695rem;
 				a {
 					padding-bottom: 0.4rem;

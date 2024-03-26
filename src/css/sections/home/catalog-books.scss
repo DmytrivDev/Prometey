@@ -2,6 +2,9 @@
 .books-html > .catalog-books {
 	margin-top: 1rem;
 	margin-bottom: 0;
+	.catalog-books__point-go a {
+		display: none;
+	}
 }
 .catalog-books {
 	margin: 1rem 0;
@@ -58,6 +61,7 @@
 	.books-html > .catalog-books {
 		margin-top: 2rem;
 	}
+
 	.catalog-books {
 		margin: 0;
 		& > .container {
@@ -83,7 +87,7 @@
 		}
 		&__point-item {
 			a {
-				padding: 1rem 1.2rem 0.7rem 1.2rem;
+				padding: 1rem 1rem 0.7rem 1rem;
 				border-radius: 3.125rem;
 				background: #f4f3f3;
 				font-size: 1.5rem;
