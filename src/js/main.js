@@ -8,3 +8,4 @@ import './parts/swiper-banner';
 import './parts/swiper-card';
 
 import './parts/scroll';
+import './parts/burger';
