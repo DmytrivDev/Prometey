@@ -134,9 +134,10 @@
 		}
 		&__point-item {
 			a {
-				padding: 0.3rem 0.7rem 0.2rem 0.7rem;
+				padding: 0.3rem 0.7rem;
 				border-radius: 1.48756rem;
 				font-size: 0.625rem;
+				line-height: 0.9rem;
 				&::before {
 					content: "";
 					display: none;
